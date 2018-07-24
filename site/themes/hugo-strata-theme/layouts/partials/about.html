@@ -1,6 +1,11 @@
-<section>
-	<header class="major">
-		{{ with .Site.Params.about.title }}<h2>{{ . | markdownify }}</h2>{{ end }}
-	</header>
-	{{ with .Site.Params.about.content }}<p>{{ . | markdownify }}</p>{{ end }}
+<section class="about">
+	<div class="picWell">
+		{{ with .Site.Params.about.thumb }}<img src="../images/{{ . }}">{{ end }}
+	</div>
+	<div class="copyWell">
+		<header class="major">
+			{{ with .Site.Params.about.title }}<h2>{{ . | markdownify }}</h2>{{ end }}
+		</header>
+			{{ with .Site.Params.about.content }}<p>{{ . | markdownify }}</p>{{ end }}
+	</div>
 </section>

@@ -1,4 +1,4 @@
-<section>
+<section class="updates">
     {{ with .Site.Params.recentposts.title }}
         <h2>{{ . }}</h2>
     {{ end }}
@@ -6,11 +6,13 @@
 	<div class="row">
         <br>
         <p>
-        <ol class="recent-posts">
+        <ul class="recent-posts">
         {{ range first 5 (where .Data.Pages "Section" "post") }}
-            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+            <li>
+                <div class="picWell"><img src="../images/{{ .Params.thumb }}" /></div>
+                <a href="{{ .Permalink }}">{{ .Title }}</a></li>
         {{ end }}
-        </ol>
+        </ul>
         </p>
 	</div>
 </section>

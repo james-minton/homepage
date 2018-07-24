@@ -1,0 +1,81 @@
+
+
+img.circleRadius {
+    border-radius: 70%;
+    filter: grayscale(100%);
+    display: none !important;
+}
+ul.recent-posts {
+    list-style: none;
+}
+@media screen and (max-width: 1280px) {
+
+#header h1 br {
+    display: initial;
+    }
+}
+html {
+    font-size: 62.5%;
+}
+
+#header {
+    background-color: #1f1815;
+    background-image: url("images/overlay.png"), url("../images/adirondacks.jpg");
+    /* background-image: url("../images/cyan-fog2.jpg"); */
+    @include for-tablet-landscape-up {
+        background-color: #1f1815;
+        background-attachment: scroll,								fixed;
+        background-image: url("images/overlay.png"), url("../images/adirondacks.jpg");
+        /* background-image: url("../images/cyan-fog2.jpg"); */
+        background-position: top left,							top left;
+        background-repeat: repeat,								no-repeat;
+        background-size: auto,								auto 100%;
+        color: rgba(255, 255, 255, 0.5);
+        height: 100%;
+        left: 0;
+        padding: 8em 4em 0 0;
+        position: fixed;
+        text-align: right;
+        top: 0;
+        width: 33%;
+        }
+    }
+    @include for-tablet-landscape-up {
+        header.major  {
+            h2 {
+            font-size: 2.9rem;
+            color: #333;
+            padding-bottom: 1.4rem;
+            }
+        }
+        p {
+            margin: 0 0 2em 0;
+            font-size: 1.6rem;
+            line-height: 2.8rem;
+            color: #8B8B8B;
+            letter-spacing: 0.06rem;
+        }
+        #main {
+            margin-left: 33%;
+            width: calc(100% - 33%)
+        }
+        .about {
+            display: flex;
+        }
+        .picWell {
+            margin-right: 3.2rem;
+        }
+        .picWell img {
+            border-radius: 100%;
+            width: 120px;
+        }
+    }
+
+#main > section {
+    border-top: solid 2px #efefef;
+    margin: 6px 0 0 0;
+    padding: 4em 0 0 0;
+}
+/* html {
+    font-size: 62.5%; // sets sitewide font sizes based on user's font size in browser
+  } */

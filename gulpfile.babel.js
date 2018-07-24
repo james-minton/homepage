@@ -9,6 +9,9 @@ import cssnext from "postcss-cssnext";
 import BrowserSync from "browser-sync";
 import webpack from "webpack";
 import webpackConfig from "./webpack.conf";
+// JM add
+import sass from "gulp-sass";
+// import cssNano from "gulp-cssnano";
 
 const browserSync = BrowserSync.create();
 
@@ -21,12 +24,28 @@ gulp.task("hugo", (cb) => buildSite(cb));
 gulp.task("hugo-preview", (cb) => buildSite(cb, hugoArgsPreview));
 
 // Run server tasks
-gulp.task("server", ["hugo", "css", "js", "fonts"], (cb) => runServer(cb));
-gulp.task("server-preview", ["hugo-preview", "css", "js", "fonts"], (cb) => runServer(cb));
+// JM add SCSS here
+gulp.task("server", ["hugo", "scss", "css", "js", "fonts"], (cb) => runServer(cb));
+gulp.task("server-preview", ["hugo-preview", "scss", "css", "js", "fonts"], (cb) => runServer(cb));
 
 // Build/production tasks
-gulp.task("build", ["css", "js", "fonts"], (cb) => buildSite(cb, [], "production"));
-gulp.task("build-preview", ["css", "js", "fonts"], (cb) => buildSite(cb, hugoArgsPreview, "production"));
+// JM add SCSS here
+gulp.task("build", ["scss", "css", "js", "fonts"], (cb) => buildSite(cb, [], "production"));
+gulp.task("build-preview", ["scss", "css", "js", "fonts"], (cb) => buildSite(cb, hugoArgsPreview, "production"));
+
+// Compile SCSS JM add
+gulp.task("scss", () => (
+  gulp.src("./src/scss/jm.scss")
+    .pipe(sass({
+      // outputStyle:  "nested",
+      precision: 10,
+      includePaths: ["node_modules"],
+    }))
+    // .pipe(postcss([ autoprefixer() ]))
+    // .pipe(cssNano())
+    .pipe(gulp.dest("./dist/css"))
+    .pipe(browserSync.stream())
+));
 
 // Compile CSS with PostCSS
 gulp.task("css", () => (
@@ -67,6 +86,7 @@ function runServer() {
     }
   });
   gulp.watch("./src/js/**/*.js", ["js"]);
+  gulp.watch("./src/scss/**/*.scss", ["scss"]); // JM add
   gulp.watch("./src/css/**/*.css", ["css"]);
   gulp.watch("./src/fonts/**/*", ["fonts"]);
   gulp.watch("./site/**/*", ["hugo"]);
