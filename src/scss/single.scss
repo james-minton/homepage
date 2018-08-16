@@ -5,3 +5,22 @@
         width: 100%;
     }
 }
+
+.single-post h2 {
+    font-size: 3.2rem;
+    color: #333;
+}
+@include for-980-up {
+    .single-post {
+        h2 {
+            font-size: 3.3rem;
+            line-height: 1.25;
+            padding-bottom: 0.8rem;
+        }
+        p {
+            &:first-of-type {
+                padding-top: 2.4rem;
+            }
+        }
+    }
+}

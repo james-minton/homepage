@@ -32,6 +32,7 @@ html {
 }
 #header {
     background-color: #1f1815;
+    background-image: url("images/overlay.png"), url("../images/adirondacks.jpg");
     &.fall {
         background-image: url("images/overlay.png"), url("../images/adirondacks.jpg");
     }
@@ -243,6 +244,19 @@ html {
 
 
     @include for-980-up {
+        p {
+            font-size: 1.7rem;
+            line-height: 2.6rem;
+        }
+        a.post-title-link {
+            font-size: 1.7rem;
+            line-height: 2.6rem;
+            padding-bottom: 1.7rem;
+        }
+        a.post-list-readmore {
+            font-size: 2.1rem;
+            margin-top: 2rem;
+        }
         #main, #header {
             padding-top: 10rem;
         }
@@ -251,6 +265,9 @@ html {
         }
         #main {
             padding-left: 8rem;
+        }
+        #main > section {
+            
         }
         #sidebar ul {
             display: block;
@@ -277,6 +294,9 @@ html {
     border-top: solid 2px #efefef;
     margin: 6px 0 0 0;
     padding: 3.2rem 0 0 0;
+    @include for-980-up {
+        padding: 4rem 0 0 0;
+    }
 }
 a.post-title-link {
     text-transform: uppercase;
@@ -296,6 +316,9 @@ p.post-summary {
     /* font-variant: small-caps; */
     padding-bottom: 24px;
     padding-top: 10px;
+    @include for-980-up {
+        padding-top: 0;
+    }
     a.icon {
         border: 2px dotted;
         padding: 7px 17px;
@@ -348,7 +371,7 @@ ul.recent-posts {
         display: flex;
         }
         @include for-980-up {
-            padding: 0 0 4rem;
+            padding: 0 0 4.8rem;
             font-size: 1.6rem;
             
         }

@@ -15,7 +15,7 @@ paginate = 10
 	description = "Homepage of James Minton, designer / developer"
 
 	# Format dates with Go's time formatting
-	date_format = "01-02-2006"
+	date_format = "July 1, 2006"
 
 	# Add read time estimates in the format "X min read"
 	show_read_time = false

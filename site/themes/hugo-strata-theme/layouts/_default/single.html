@@ -1,19 +1,19 @@
 {{ define "main" }}
-	
+	<div class="single-post">
 		<div class="post-img">
 			{{ with .Params.postImg }}<img src="/images/{{ . }}" />{{ end }}
 		</div>
 
 	<span>
-		<h1>{{ .Title }}</h1>
+		<h2>{{ .Title }}</h2>
 
 		{{ partial "post-meta" . }}
 	</span>
 
-	<p>
+	
 	    {{ .Content }}
-	</p>
-
+	
+</div>
 	<!--{{ template "_internal/disqus.html" . }}-->
 {{ end }}
 
