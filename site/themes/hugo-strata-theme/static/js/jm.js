@@ -1,7 +1,7 @@
 // Scrobbler output    
     
     $(document).ready(function() {
-        $.getJSON("http://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=vast_expanse&api_key=937b5452bfdba28a90348c6772e2eb4c&limit=10&&format=json&callback=?", function(data) {
+        $.getJSON("https://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=vast_expanse&api_key=937b5452bfdba28a90348c6772e2eb4c&limit=10&&format=json&callback=?", function(data) {
                var html = '';
                var html2 = '';
                var counter = 1;
