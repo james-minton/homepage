@@ -1,6 +1,15 @@
 {{ define "main" }}
-    {{ .Content }}
 
+    {{ .Content }}
+    <header class="major">
+       
+            {{ with .Site.Params.recentposts.title }}
+               
+                    <h2 class="dark-blk page-head">{{ . }}</h2>
+                
+        {{ end }}
+    </header>
+        
     {{ $paginator := .Paginate .Data.Pages }}
     {{ range $paginator.Pages }}
         {{ .Render "summary" }}

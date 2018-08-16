@@ -1,18 +1,43 @@
 <section class="updates">
-    {{ with .Site.Params.recentposts.title }}
-        <h2>{{ . }}</h2>
-    {{ end }}
 
 	<div class="row">
-        <br>
-        <p>
-        <ul class="recent-posts">
-        {{ range first 5 (where .Data.Pages "Section" "post") }}
+        <ul class="recent-posts section-head">
+            {{ with .Site.Params.recentposts.title }}
             <li>
-                <div class="picWell"><img src="../images/{{ .Params.thumb }}" /></div>
-                <a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                    <div class="picWell"></div>
+                    <div class="post-list">
+                            <a href="/updates"><h2>{{ . }}</h2></a>
+                        
+                    </div>
+                </li>
         {{ end }}
         </ul>
-        </p>
-	</div>
+        <br>
+        
+        <ul class="recent-posts post-list">
+        {{ range first 3 (where .Data.Pages "Section" "updates") }}
+            <li>
+                <div class="picWell {{ .Params.specialClass }}"><img src="../images/{{ .Params.thumb }}" /></div>
+                <div class="post-list">
+                    <a class="post-title-link" href="{{ .Permalink }}">{{ .Title }}</a>
+                    <p class="post-summary">{{ .Params.listSummary | markdownify }} <a class="post-list-readmore icon fa-carat" href="{{ .Permalink }}">read more </a></p>
+                    
+                </div>
+            </li>
+        {{ end }}
+
+        </ul>
+       
+        <ul class="recent-posts section-head">
+         
+            <li>
+                    <div class="picWell"></div>
+                    <div class="post-list section-more">
+                        <a class="icon fa-carat" href="/updates">More updates </a>
+                        
+                    </div>
+                </li>
+     
+        </ul>
+        
 </section>

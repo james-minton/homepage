@@ -1,4 +1,6 @@
-{{ define "main" }}
+
+{{ define "main" }}	
+			
 	{{ if not .Site.Params.about.hide }}
 		{{ partial "about" . }}
 	{{ end }}
@@ -14,4 +16,6 @@
 	{{ if not .Site.Params.contact.hide }}
 		{{ partial "contact" . }}
 	{{ end }}
+	{{ partial "current.html" . }}
+		
 {{ end }}

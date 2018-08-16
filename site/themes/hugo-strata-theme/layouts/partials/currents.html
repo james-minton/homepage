@@ -1,0 +1,51 @@
+<section class="current">
+        <div class="picWell">
+                {{ with .Params.weatherThumb }}<img src="../images/{{ . }}">{{ end }}
+            </div>
+            <div class="copyWell">
+              
+                    {{ with .Site.Params.current.title }}<h2>{{ . | markdownify }}</h2>{{ end }}
+             
+    <div id="facts">
+        {{ range first 1 ( .Params.newsDisplay ) }}
+            <span class="news"><span class="emphasis">Latest News: </span><a href="{{ .link }}" target="_blank">{{ .news }}</a></span><br />
+        {{ end }}
+        <span id="weather"></span><br />
+        <!--<p class="noMarg grey"><span class="emphasis"> Current reading: &nbsp;</span>{{ .Params.reading | safeHTML }}<br />
+            <span class="emphasis"> Heavy rotation: &nbsp;</span>{{ .Params.rotation | safeHTML }}<br />
+        </p>
+        <div id="recentSongs">
+            <div class="attribute">
+                <span class="emphasis"> Recently played: &nbsp;</span>
+            </div>	
+            <div class="value">	
+                <span class="listening-to"></span> &nbsp;|&nbsp;
+                    <a class="collapsed emphasis" data-toggle="collapse" href="#showSongs" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            More &nbsp;<i class="icon fa-carat-down"></i> 
+                    </a>
+                <div class="collapse grey" id="showSongs">
+                    <ul class="minusOne"><span class="listening-to2"></span></ul>
+                </div>
+            </div>	
+        </div>-->
+    </div>
+</section>    	
+<script>
+    var requestURL = 'http://api.openweathermap.org/data/2.5/weather?id=5128581&units=imperial&appid=e7cb9d72811c190120ddb2017b4d078a';
+    var request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+    request.responseType = 'json';
+    request.send();
+    request.onload = function() {
+      var weather = request.response;
+      populateWeather(weather);
+      showWeather(weather);
+    }
+    function populateWeather(jsonObj) {
+      var myPara = document.createElement('span');
+      myPara.innerHTML = '<span class="emphasis">Current NYC weather: </span> ' + '<span class="capitalize">' + jsonObj['weather'][0]['description'] + '</span>' + ', ' + jsonObj['main']['temp'] + '˚ F. '
+      + 'Low: ' + jsonObj['main']['temp_min'] + '˚, ' + 'high: ' + jsonObj['main']['temp_max'] + '˚';
+      document.getElementById("weather").appendChild(myPara);
+    }
+    function showWeather(jsonObj) {}
+</script>

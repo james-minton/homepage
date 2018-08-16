@@ -11,11 +11,11 @@ paginate = 10
 [params]
 	# To provide some metadata for search engines feel free to add a few
     # information about you and your website.
-	name = "Your name"
-	description = "Describe your website"
+	name = "James Minton"
+	description = "Homepage of James Minton, designer / developer"
 
 	# Format dates with Go's time formatting
-	date_format = "2006-01-02"
+	date_format = "01-02-2006"
 
 	# Add read time estimates in the format "X min read"
 	show_read_time = false
@@ -30,7 +30,7 @@ paginate = 10
 		avatar = "jm-logo-white-4.svg"
         avatar2 = "jm-self-sepia.jpg"
 		# Use Markdown to format the string. This works nearly all over the theme
-		bio = "Creative Director<br>Designer<br>Developer"
+		bio = ""
 		twitter = "vastexpanse"
 		github = ""
 		gitlab = ""
@@ -50,7 +50,7 @@ paginate = 10
 	[params.about]
 		hide  = false
 		title = "James Minton"
-		content = "Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia."
+		content = "Hello world!"
         thumb = "jm-self-sepia.jpg"
 
 	[params.portfolio]
@@ -97,21 +97,28 @@ paginate = 10
 
 	[params.recentposts]
 		hide  = false
-		title = "Recent blog posts"
+		title = "Updates"
 
 	[params.contact]
 		hide  = false
-		title = "Get In Touch"
-		content = "Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor."
+		title = "Talk to me"
+		content = ""
+		email = "minton.james@gmail.com"
+
+	[params.current]
+		hide  = false
+		title = "News & Weather"
+		content = ""	
+
 
 		# This can be exact coordinates or a searchable address in google maps
-		gmaps_address = "39.7889055,-120.5443524"
-		address = [
-			"1234 Somewhere Rd.",
-			"Nashville, TN 00000",
-			"United States"
-		]
-		phone = "000-000-0000"
+		# gmaps_address = "39.7889055,-120.5443524"
+		# address = [
+		#	"1234 Somewhere Rd.",
+		#	"Nashville, TN 00000",
+		#	"United States"
+		#]
+		# phone = "000-000-0000"
 
 		# Since this template is static, the contact form uses www.formspree.io as a
 		# proxy. The form makes a POST request to their servers to send the actual
@@ -124,7 +131,8 @@ paginate = 10
 	    # - send a dummy email yourself to confirm your account
 	    # - click the confirm link in the email from www.formspree.io
 	    # - you're done. Happy mailing!
-		email = "hello@example.com"
+		email = "james@jamesminton.com"
+		connect = "@vastexpanse on Twitter"
 
 		[params.contact.form]
 			# Set custom strings for the form if your native
@@ -137,17 +145,18 @@ paginate = 10
 
 # Menu links that appear on the left sidebar
 
- # [[menu.main]]
- # name = "Home"
- # url  = "/"
- # weight = 0
+ [[menu.main]]
+ name = "Home"
+ url  = "/"
+ weight = 2 
 
- # [[menu.main]]
- # name = "About"
- # url  = "about"
- # weight = 5
 
- # [[menu.main]]
- # name = "Blog"
- # url  = "post/"
- # weight = 10    
+ [[menu.main]]
+ name = "Updates"
+ url  = "/updates"
+ weight = 10   
+
+[[menu.main]]
+ name = "Contact"
+ url  = "/#contact-header"
+ weight = 20   

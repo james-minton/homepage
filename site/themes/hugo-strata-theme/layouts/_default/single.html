@@ -1,4 +1,9 @@
 {{ define "main" }}
+	
+		<div class="post-img">
+			{{ with .Params.postImg }}<img src="/images/{{ . }}" />{{ end }}
+		</div>
+
 	<span>
 		<h1>{{ .Title }}</h1>
 
@@ -9,5 +14,6 @@
 	    {{ .Content }}
 	</p>
 
-	{{ template "_internal/disqus.html" . }}
+	<!--{{ template "_internal/disqus.html" . }}-->
 {{ end }}
+

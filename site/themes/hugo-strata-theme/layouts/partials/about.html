@@ -6,6 +6,12 @@
 		<header class="major">
 			{{ with .Site.Params.about.title }}<h2>{{ . | markdownify }}</h2>{{ end }}
 		</header>
-			{{ with .Site.Params.about.content }}<p>{{ . | markdownify }}</p>{{ end }}
-	</div>
+			<p>{{ .Params.selfbio | safeHTML }}</p>
+				
+	</div>	
+
+							
+		
 </section>
+
+
