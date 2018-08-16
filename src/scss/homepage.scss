@@ -65,11 +65,13 @@ html {
         color: #cccccc;
         text-decoration: none;
         line-height: 3.6rem;
-        letter-spacing: 0.08rem;
+        letter-spacing: 0.04rem;
+        font-weight: 600;
     }
-    p {
+    p, span {
         color: #848484;
         color: #828282;
+        color: #646464;
     }
     .about p {
        /* color: #afafaf; */
@@ -176,7 +178,7 @@ html {
             margin: 0 0 1.7rem 0;
             font-size: 1.6rem;
             line-height: 2.65rem;
-            letter-spacing: 0.03rem;
+            letter-spacing: 0.01rem;
         }
         .about {
             display: flex;
@@ -272,6 +274,9 @@ html {
         #sidebar ul {
             display: block;
         }
+        span.emphasis {
+            font-size: 2.1rem;
+        }
         #footer {
             padding: 0 8rem 6em 0;
             width: 33%;
@@ -301,11 +306,12 @@ html {
 a.post-title-link {
     text-transform: uppercase;
     font-weight: 500;
-    color: #464646;
+    color: #333;
     border-bottom: none;
 }
 a.post-list-readmore {
     font-variant: small-caps;
+    font-weight: 600;
 }
 p.post-summary {
     margin-bottom: 0rem;

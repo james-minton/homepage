@@ -101,7 +101,7 @@ paginate = 10
 
 	[params.contact]
 		hide  = false
-		title = "Let's talk."
+		title = "Let's talk"
 		content = ""
 		email = "minton.james@gmail.com"
 
