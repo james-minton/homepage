@@ -1,6 +1,7 @@
 {{ define "main" }}
 
     {{ .Content }}
+    
     <header class="major">
        
             {{ with .Site.Params.recentposts.title }}
@@ -9,11 +10,14 @@
                 
         {{ end }}
     </header>
+  
+        {{ $paginator := .Paginate .Data.Pages }}
         
-    {{ $paginator := .Paginate .Data.Pages }}
-    {{ range $paginator.Pages }}
-        {{ .Render "summary" }}
-    {{ end }}
-
-    {{ partial "pagination" . }}
+        {{ range $paginator.Pages }}
+            {{ .Render "summary" }}
+        {{ end }}
+    
+        {{ partial "pagination" . }}
+   
 {{ end }}
+ 

@@ -25,7 +25,11 @@ ul.recent-posts {
 html {
     font-size: 62.5%;
 }
-
+@media screen and (max-width: 767px) {
+    #main {
+        padding: 2.25em 1.5em 0.25em 1.5em;
+    }
+}
 #header {
     background-color: #1f1815;
     &.fall {
@@ -52,10 +56,14 @@ html {
         width: 33%;
         }
     }
+    #sidebar ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
     #sidebar ul li a, #sidebar ul li a a:visited {
         color: #cccccc;
         text-decoration: none;
-        line-height: 3.4rem;
+        line-height: 3.6rem;
         letter-spacing: 0.08rem;
     }
     p {
@@ -71,6 +79,10 @@ html {
         background-color: #fdfdfd;
         margin-top: 3rem; */
     }
+    #main > section.about {
+        padding-top: 1.6rem;
+    }
+
     .picWell {
         width: 120px;
         margin: auto;
@@ -148,6 +160,9 @@ html {
         #main {
             padding: 4em;
         }
+        #main > section.about {
+            padding-top: 0rem;
+        }
         a.post-title-link {
             font-size: 1.6rem;
             letter-spacing: 0.09rem;
@@ -223,6 +238,10 @@ html {
             margin-right: 0;
         }
     }   
+
+/* --------------- DESKTOP UP ----------------------- */
+
+
     @include for-980-up {
         #main, #header {
             padding-top: 10rem;
@@ -232,6 +251,9 @@ html {
         }
         #main {
             padding-left: 8rem;
+        }
+        #sidebar ul {
+            display: block;
         }
         #footer {
             padding: 0 8rem 6em 0;
@@ -275,14 +297,14 @@ p.post-summary {
     padding-bottom: 24px;
     padding-top: 10px;
     a.icon {
-        border: 2px solid;
-        padding: 13px 20px;
-        border-radius: 6px;
+        border: 2px dotted;
+        padding: 7px 17px;
+        border-radius: 4px;
         &:hover {
             background-color: #49bf9d;
             color: #fff !important;
-            border: 2px solid #49bf9d;
-            padding: 13px 20px;
+            border: 2px dotted #49bf9d;
+            padding: 7px 17px;
         }
     }
 }
@@ -290,7 +312,7 @@ input[type="submit"].icon.fa-carat {
     font-size: 1.8rem; 
     letter-spacing: 0.12rem;
     /* font-variant: small-caps; */
-    border: 2px solid #49bf9d;
+    border: 2px dotted #49bf9d;
     color: #49bf9d !important;
     padding: 13px 20px;
     border-radius: 6px;
@@ -298,7 +320,7 @@ input[type="submit"].icon.fa-carat {
     &:hover {
         background-color: #49bf9d;
         color: #fff !important;
-        border: 2px solid #49bf9d;
+        border: 2px dotted #49bf9d;
         padding: 13px 20px;
     }
     &:after {
@@ -336,9 +358,22 @@ ul.recent-posts {
     }
     }
 }
-.updates.updates-page {
+/* ------------- UPDATES PAGE ---------------------- */
+
+
+h2.dark-blk.page-head {
+    text-align: center;
     @include for-980-up {
-        margin-top: 0 !important;
+        text-align: left;
+    }
+}
+.updates.updates-page {
+    margin-top: 1.4rem !important;
+    ul.recent-posts li {
+        padding: 0 0 0.8rem;
+    }
+    @include for-980-up {
+       
     ul.recent-posts {
         margin-bottom: 0;
         li {
@@ -346,6 +381,14 @@ ul.recent-posts {
                 font-size: 1.6rem;
                 }
             }
+    }
+}
+section.updates.updates-page:last-child {
+    padding-bottom: 4rem !important;
+}
+@include for-980-up {
+    section.updates.updates-page:last-child {
+        padding-bottom: 0rem !important;
     }
 }
 
