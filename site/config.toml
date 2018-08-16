@@ -49,7 +49,7 @@ paginate = 10
 
 	[params.about]
 		hide  = false
-		title = "James Minton"
+		title = "Hi, I'm James Minton."
 		content = "Hello world!"
         thumb = "jm-self-sepia.jpg"
 
