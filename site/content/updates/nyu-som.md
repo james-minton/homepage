@@ -1,9 +1,10 @@
 ---
 
-date: "2018-06-25T11:49:03-07:00"
+date: "2017-05-17T11:49:03-07:00"
 draft: false
 title: "New Work: NYU School of Medicine"
 thumb: "nyu-som.jpg"
+postImg: "nyu-research.jpg"
 listSummary: >
             After more than a year of hard work, with hundreds of pages built and contributors filling several floors of Midtown office space, the new and greatly improved NYU School of Medicine website has launched. My role has encompassed ...
 
