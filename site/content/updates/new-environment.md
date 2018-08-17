@@ -7,9 +7,9 @@ thumb: "new-environment.jpg"
 postImg: "adirondack-trail.jpg"
 headerBg: summer
 listSummary: >
-             Hi & welcome to my new website. It's been long past time for a revamp, but I've been lucky to be far too busy with other work. Lately, though, I've cobbled together a spare moment or two ...
+             Hi & welcome to my new website. It's long been time for a revamp, but I've been lucky to be far too busy with other work. Lately, though, I've cobbled together a spare moment or two ...
 ---             
-Hi & welcome to my new website. It's been long past time for a revamp, but I've been lucky to be far too busy with other work. 
+Hi & welcome to my new website. It's long been time for a revamp, but I've been lucky to be far too busy with other work. 
 
 Lately, though, I've cobbled together a spare moment or two, and have taken what I learned from the process of building <a href="https://evictionlab.org" target="_blank">evictionlab.org</a> to create something more minimalist / lightweight: a database-free static site.
 
