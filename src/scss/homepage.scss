@@ -62,11 +62,17 @@ html {
         justify-content: space-evenly;
     }
     #sidebar ul li a, #sidebar ul li a a:visited {
-        color: #cccccc;
+        color: #fdfdfd;
         text-decoration: none;
         line-height: 3.6rem;
         letter-spacing: 0.04rem;
-        font-weight: 600;
+        /* font-weight: 900; */
+        font-family: 'Crimson Text', serif;
+        /* text-decoration: underline; */
+        border: 2px dotted #d0d0d0;
+        padding: 4px 14px 8px;
+        border-radius: 4px;
+        background: rgba(20, 51, 42, 0.5);
     }
     p, span {
         color: #848484;
@@ -273,6 +279,11 @@ html {
         }
         #sidebar ul {
             display: block;
+        }
+        #sidebar ul li a, #sidebar ul li a a:visited {
+            border: none;
+            padding: initial;
+            background: none;
         }
         span.emphasis {
             font-size: 2.1rem;
