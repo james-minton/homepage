@@ -1,7 +1,7 @@
 ---
 type: index
 selfbio: >
-         I'm a designer and developer living in New York City. My cross-disciplinary background includes degrees in photography, multimedia arts, and psychology, and work on major documentaries and web projects. These days I serve as Creative Director and Project Lead for <a href="https://evictionlab.org" target="_blank">evictionlab.org</a>.
+         <span class="bold">Hi, I'm James Minton.</span> I'm a designer and web developer living in New York City. My cross-disciplinary background includes degrees in photography, multimedia arts, and psychology, and work on major documentaries and web projects. These days I serve as Creative Director and Project Lead for <a href="https://evictionlab.org" target="_blank">evictionlab.org</a>.
 reading: 'The Reactionary Mind by Corey Robin'
 rotation: '"Her" / Zomby '   
 contactThumb: 'rotary-blk.jpg'  
