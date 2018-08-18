@@ -15,7 +15,7 @@
         <br>
         
         <ul class="recent-posts post-list">
-        {{ range first 3 (where .Data.Pages "Section" "updates") }}
+        {{ range first 2 (where .Data.Pages "Section" "updates") }}
             <li>
                 <div class="picWell {{ .Params.specialClass }}"><img src="../images/{{ .Params.thumb }}" /></div>
                 <div class="post-list">
