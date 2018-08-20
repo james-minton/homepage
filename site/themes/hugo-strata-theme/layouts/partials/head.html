@@ -7,6 +7,16 @@
 {{ "-->" | safeHTML }}
 <html>
 	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-8268932-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-8268932-1');
+		</script>
+
 		<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} &middot; {{ .Site.Title }}{{ end }}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -31,8 +41,7 @@
 		<link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css" />
 		<link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/jm.css" />
 		{{ "<!--[if lte IE 8]>" | safeHTML }}<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/ie8.css">{{ "<![endif]-->" | safeHTML}}
-		{{ template "_internal/google_analytics.html" . }}
-		
+
 		{{ with .RSSLink }}
 		<link href="{{ . }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
 		<link href="{{ . }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" />
