@@ -1,4 +1,5 @@
 ---
 type: index
-headerBg: summer  
+headerBg: summer
+metaContent: Updates  
 ---

@@ -17,11 +17,11 @@
 		gtag('config', 'UA-8268932-1');
 		</script>
 
-		<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} &middot; {{ .Site.Title }}{{ end }}</title>
+		<title>{{ .Site.Title }} &middot; {{ .Params.metaContent }}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		{{ with .Site.Params.name }}<meta name="author" content="{{ . }}">{{ end }}
-		{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+		<meta name="description" content="{{ .Params.metaContent }}">
 		{{ with .Site.LanguageCode }}<meta http-equiv="content-language" content="{{ . }}" />{{ end }}
 
 		{{ if not .Site.Params.OpenGraph.hide }}
