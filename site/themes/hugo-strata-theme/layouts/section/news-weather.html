@@ -1,0 +1,19 @@
+<section class="news news-page">
+
+	<div class="row">
+         
+        <ul class="recent-posts">
+        
+            <li>
+                <div class="picWell {{ .Params.specialClass }}"><img src="../images/{{ .Params.thumb }}" /></div>
+                <div class="post-list">
+                    <a class="post-title-link" href="{{ .Permalink }}">{{ .Title }}</a>
+                    <p class="post-summary">{{ .Params.listSummary | markdownify }}
+                    <a class="post-list-readmore icon fa-carat" href="{{ .Permalink }}">read more </a></p>
+                </div>
+            </li>
+    
+        </ul>
+   
+    </div>
+    </section>
