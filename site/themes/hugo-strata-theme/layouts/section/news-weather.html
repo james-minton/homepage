@@ -1,19 +1,76 @@
-<section class="news news-page">
+{{ define "main" }}
 
-	<div class="row">
-         
-        <ul class="recent-posts">
-        
-            <li>
-                <div class="picWell {{ .Params.specialClass }}"><img src="../images/{{ .Params.thumb }}" /></div>
-                <div class="post-list">
-                    <a class="post-title-link" href="{{ .Permalink }}">{{ .Title }}</a>
-                    <p class="post-summary">{{ .Params.listSummary | markdownify }}
-                    <a class="post-list-readmore icon fa-carat" href="{{ .Permalink }}">read more </a></p>
-                </div>
-            </li>
+    {{ .Content }}
     
-        </ul>
-   
-    </div>
-    </section>
+    <header class="major">
+       
+           
+               
+                    <h2 class="dark-blk page-head">{{ .Params.pageTitle }}</h2>
+                
+      
+    </header>
+
+    <section class="current news-weather">
+        <div class="picWell">
+                {{ with .Site.Params.weatherThumb.thumb }}<img src="../images/{{ . }}">{{ end }}
+            </div>
+            <div class="copyWell">
+              
+                <div id="facts">
+                    <span id="weather"></span><br />
+                    <span id="forecast"></span>
+                </div>
+            </div>
+    </section> 
+    <section class="news-links">  
+        <span class="emphasis">Recent headlines</span>  
+        <ul class="news-link-list">
+            {{ range first 20 ( .Params.newsDisplay ) }}
+                <li>
+                    <a href="{{ .link }}" target="_blank">{{ .news }}</a><br />
+                    <span>{{ .comment }}</span>
+                </li>
+            {{ end }}  
+        </ul>        
+        
+        {{ $paginator := .Paginate .Data.Pages }}
+
+
+            {{ range $paginator.Pages }}
+
+                
+               
+            {{ end }}
+    
+        {{ partial "pagination" . }}
+
+    </section>     
+        <script>
+            var requestURL = 'https://api.openweathermap.org/data/2.5/weather?id=5128581&units=imperial&appid=e7cb9d72811c190120ddb2017b4d078a';
+            var request = new XMLHttpRequest();
+            request.open('GET', requestURL);
+            request.responseType = 'json';
+            request.send();
+            request.onload = function() {
+              var weather = request.response;
+              populateWeather(weather);
+              showWeather(weather);
+            }
+            function populateWeather(jsonObj) {
+              var myPara = document.createElement('span');
+              var sunriseConvert = jsonObj['sys']['sunrise'];
+              var mySunrise = new Date( sunriseConvert *1000);
+              var sunsetConvert = jsonObj['sys']['sunset'];
+              var mySunset = new Date( sunsetConvert *1000);
+              myPara.innerHTML = '<span class="emphasis">Current NYC weather </span><br /> ' + '<span class="capitalize">' + jsonObj['weather'][0]['description'] + '</span>' + ', ' + jsonObj['main']['temp'] + '˚ F '
+              + '<br />Humidity: ' +jsonObj['main']['humidity'] + '%' ;
+              document.getElementById("weather").appendChild(myPara);
+              document.getElementById("forecast").innerHTML = 'Sunrise: ' + [mySunrise.getHours()] + ':' + [mySunrise.getMinutes()] + ' am &nbsp;|&nbsp; ' + 'Sunset: ' + [mySunset.getHours() -12] + ':' + [mySunset.getMinutes()] + ' pm' ;
+            }
+            function showWeather(jsonObj) {}
+           
+
+        </script>  
+{{ end }}
+

@@ -1,0 +1,16 @@
+<!-- <span>
+    <h1>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </h1>
+
+    {{ partial "post-meta" . }}
+</span>
+
+<p>{{ .Summary }}</p>
+<hr> -->
+
+
+    {{ range first 1 ( .Params.newsDisplay ) }}
+        <span class="news"><span class="emphasis">Latest News: </span><a href="{{ .link }}" target="_blank">{{ .news }}</a></span><br />
+    {{ end }}
+

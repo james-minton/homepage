@@ -1,0 +1,59 @@
+/* news-weather.scss */
+
+.news-weather, .news-links {
+    #facts {
+        text-align: center;
+        @include for-768-up {
+            text-align: left;
+        }
+    }
+    .emphasis {
+        display: block;
+        text-align: center;
+        @include for-768-up {
+            display: inline;
+            text-align: left;
+        }
+    }
+}
+
+.news-links {
+    .emphasis {
+        display: block;
+        padding-bottom: 1.6rem;
+    }
+}
+
+ul.news-link-list {
+    list-style: none;
+    padding-left: 0;
+   
+    li:before {
+        content: "°";
+        /* margin-top: 3rem; */
+        position: absolute;
+        top: 16px;
+        color: #49bf9c;
+        font-size: 2.2rem;
+        left: -16px;
+       
+    }
+    li {
+        border-bottom: 1px solid #efefef;
+        padding-bottom: 1.6rem;
+        padding-top: 1rem;
+        position: relative;
+        margin-left: 1.6rem;
+
+        a {
+            font-weight: 400;
+        }
+        span {
+            @include for-768-up {
+            }
+        }
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}

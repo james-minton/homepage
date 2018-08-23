@@ -111,6 +111,9 @@ paginate = 10
 		title = "News & Weather"
 		content = ""	
 
+	[params.weatherThumb]
+		thumb = "nyc-weather.jpg" 	
+
 
 		# This can be exact coordinates or a searchable address in google maps
 		# gmaps_address = "39.7889055,-120.5443524"

@@ -39,6 +39,9 @@ html {
     &.summer {
         background-image: url("images/overlay.png"), url("../images/summer-maui.jpg");
     }
+    &.winter-city {
+        background-image: url("images/overlay.png"), url("../images/nyc-night.jpg");
+    }
     /* background-image: url("../images/cyan-fog2.jpg"); */
     @include for-980-up {
         background-color: #1f1815;

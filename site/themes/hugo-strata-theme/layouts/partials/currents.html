@@ -44,7 +44,7 @@
     function populateWeather(jsonObj) {
       var myPara = document.createElement('span');
       myPara.innerHTML = '<span class="emphasis">Current NYC weather: </span> ' + '<span class="capitalize">' + jsonObj['weather'][0]['description'] + '</span>' + ', ' + jsonObj['main']['temp'] + '˚ F. '
-      + 'Low: ' + jsonObj['main']['temp_min'] + '˚, ' + 'high: ' + jsonObj['main']['temp_max'] + '˚';
+      ;
       document.getElementById("weather").appendChild(myPara);
     }
     function showWeather(jsonObj) {}
