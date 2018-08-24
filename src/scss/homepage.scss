@@ -292,9 +292,13 @@ html {
 
 
     @include for-980-up {
-        p {
+        p
+         {
             font-size: 1.7rem;
             line-height: 2.6rem;
+            a {
+                font-size: 1.7rem;
+            }
         }
         ul li {
             font-size: 1.7rem;
@@ -330,6 +334,9 @@ html {
             border: none;
             padding: initial;
             background: none;
+        }
+        p#facts {
+            margin-bottom: 0;
         }
         span.emphasis {
             font-size: 2.1rem;

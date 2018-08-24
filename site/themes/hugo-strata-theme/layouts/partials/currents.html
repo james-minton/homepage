@@ -6,7 +6,7 @@
               
                     {{ with .Site.Params.current.title }}<h2>{{ . | markdownify }}</h2>{{ end }}
              
-    <div id="facts">
+    <p id="facts">
         {{ range first 1 ( .Params.newsDisplay ) }}
             <span class="news"><span class="emphasis">Latest News: </span><a href="{{ .link }}" target="_blank">{{ .news }}</a></span><br />
         {{ end }}
@@ -28,7 +28,7 @@
                 </div>
             </div>	
         </div>-->
-    </div>
+    </p>
     <ul class="recent-posts section-head pgButton">
          
             <li>
