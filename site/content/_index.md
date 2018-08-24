@@ -9,6 +9,9 @@ contactThumb: 'rotary-blk.jpg'
 weatherThumb: 'ca-weather.jpg' 
 headerBg: fall  
 newsDisplay: 
+  - news: 'Landlords limit voucher holders’ choice in where they can live'
+    link: 'https://www.urban.org/urban-wire/landlords-limit-voucher-holders-choice-where-they-can-live'
+    comment: 
   - news: 'Renters getting evicted will soon get free lawyers in N.J. city'
     link: 'https://www.nj.com/essex/index.ssf/2018/08/newark_right_to_counsel_free_lawyers_evictions.html'
   - news: 'How Medicare Was Won'

@@ -4,6 +4,9 @@ headerBg: winter-city
 pageTitle: 'News & Weather'
 metaContent: 'News & Weather'   
 newsDisplay: 
+  - news: 'Landlords limit voucher holders’ choice in where they can live'
+    link: 'https://www.urban.org/urban-wire/landlords-limit-voucher-holders-choice-where-they-can-live'
+    comment: 
   - news: 'Severe vulnerability exposes WordPress websites to attack'
     link: 'https://www.zdnet.com/article/wordpress-vulnerability-affects-a-third-of-most-popular-websites-online/'
     comment: Yikes.

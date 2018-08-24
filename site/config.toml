@@ -160,7 +160,12 @@ paginate = 10
  url  = "/updates"
  weight = 10   
 
+ [[menu.main]]
+ name = "News & Weather"
+ url  = "/news"
+ weight = 20  
+
 [[menu.main]]
  name = "Contact"
  url  = "/#contact-header"
- weight = 20   
+ weight = 30   

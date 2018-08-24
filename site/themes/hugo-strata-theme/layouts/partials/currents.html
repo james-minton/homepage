@@ -1,6 +1,6 @@
 <section class="current">
         <div class="picWell">
-                {{ with .Params.weatherThumb }}<img src="../images/{{ . }}">{{ end }}
+                {{ with .Site.Params.weatherThumb.thumb }}<img src="../images/{{ . }}">{{ end }}
             </div>
             <div class="copyWell">
               
@@ -29,6 +29,18 @@
             </div>	
         </div>-->
     </div>
+    <ul class="recent-posts section-head pgButton">
+         
+            <li>
+                    <div class="picWell"></div>
+                    <div class="post-list section-more">
+                        <a class="icon fa-carat" href="/news">More news & weather </a>
+                        
+                    </div>
+                </li>
+     
+        </ul>  
+     
 </section>    	
 <script>
     var requestURL = 'https://api.openweathermap.org/data/2.5/weather?id=5128581&units=imperial&appid=e7cb9d72811c190120ddb2017b4d078a';
