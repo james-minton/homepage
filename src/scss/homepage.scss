@@ -271,6 +271,15 @@ html {
         .post-list.section-more {
             text-align: left;
         }
+        ul.recent-posts {
+            &.pgButton {
+                
+                .post-list.section-more {
+                    padding-bottom: 0;
+                    padding-top: 1.6rem;
+                }
+                }    
+            }
         ul.actions {
             margin-left: 0;
             margin-right: 0;
@@ -316,15 +325,7 @@ html {
         #sidebar ul {
             display: block;
         }
-        ul.recent-posts {
-            &.pgButton {
-                
-                .post-list.section-more {
-                    padding-bottom: 0;
-                    padding-top: 1.6rem;
-                }
-                }    
-            }
+        
         #sidebar ul li a, #sidebar ul li a a:visited {
             border: none;
             padding: initial;
