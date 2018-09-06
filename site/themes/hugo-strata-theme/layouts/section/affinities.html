@@ -1,0 +1,59 @@
+{{ define "main" }}
+
+    {{ .Content }}
+    
+    <header class="major">
+       
+        
+                    <h2 class="dark-blk page-head">{{ .Params.pageTitle }}</h2>
+                </header>
+                   
+        <section class="current affinities-page">
+                    <p id="facts">
+                       
+                        
+                        <p class="noMarg">
+                            <span class="emphasis"> Current reading: &nbsp;</span>{{ .Params.reading | safeHTML }}<br />
+                            <span class="emphasis"> Last good movie: &nbsp;</span>{{ .Params.movie | safeHTML }}<br />
+                            <span class="emphasis"> Heavy rotation: &nbsp;</span>{{ .Params.rotation | safeHTML }}<br />
+                        </p>
+                        <div id="recentSongs">
+                            <div class="attribute">
+                                <span class="emphasis"> Recently played: &nbsp;</span>
+                            </div>	
+                            <div class="value">	
+                                <span class="listening-to"></span> &nbsp;|&nbsp;
+                                    <a class="collapsed emphasis" data-toggle="collapse" href="#showSongs" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            More &nbsp;<i class="icon fa-carat-down"></i> 
+                                    </a>
+                                <div class="collapse grey" id="showSongs">
+                                    <ul class="minusOne"><span class="listening-to2"></span></ul>
+                                </div>
+                            </div>	
+                        </div>
+                    </p>
+                   
+      </section>
+      <section class="influences affinities-page">
+            <span class="emphasis">Art & Design Influences</span>  
+            <ul class="news-link-list">
+                    {{ range ( .Params.artInfluenceMultiple ) }}
+                    <li>
+                        {{ .influence | safeHTML }}<br />
+                        {{ with .comment }}<span>{{ . | safeHTML }}</span>{{ end }}
+                    </li>
+                {{ end }}  
+                {{ range ( .Params.artInfluences ) }}
+                    <li>
+                        {{ .influence }}: <a href="{{ .link }}" target="_blank">{{ .bookTitle }}</a><br />
+                        {{ with .comment }}<span>{{ . | safeHTML }}</span>{{ end }}
+                    </li>
+                {{ end }}  
+            </ul>    
+      </section>
+   
+
+    
+       
+{{ end }}
+

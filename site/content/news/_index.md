@@ -3,6 +3,8 @@ type: index
 headerBg: winter-city
 pageTitle: 'News & Weather'
 metaContent: 'News & Weather'
+testVariable:
+title:
 listType: news   
 newsListDisplay: 
   - news: "America's Eviction Epidemic | WNPR"

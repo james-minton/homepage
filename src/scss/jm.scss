@@ -65,6 +65,10 @@ body {
 .grey {
     color: #afafaf;
 }
+strong, b {
+  color: #646464;
+  font-weight: 700;
+}
 .dark-blk {
   color: #333;
 }
@@ -146,4 +150,6 @@ a.collapsed i.icon.fa-carat-down {
 
 @import 'homepage';
 @import 'single';
-@import 'news-weather'
+@import 'news-weather'; 
+@import 'affinities'
+

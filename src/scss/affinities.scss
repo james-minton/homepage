@@ -1,0 +1,42 @@
+/* ---------- Affinities.scss ----------------- */
+
+#main section.current.affinities-page {
+    @include for-768-up {
+        display: block;
+    }
+}
+
+#recentSongs {
+    display: flex;
+    .attribute {
+        min-width: 156px;
+    }
+}
+
+.influences .emphasis, .friends .emphasis {
+    display: block;
+    padding-bottom: 1.6rem;
+}
+
+.affinities-page {
+    ul.news-link-list li span {
+        display: block;
+        margin-top: 0.8rem;
+        margin-left: 1.6rem;
+        &:before {
+                content: "- ";
+                position: absolute;
+                left: 1rem;
+        }
+    }
+    .value {
+        @include for-768-up {
+            font-size: 1.7rem;
+            vertical-align: baseline;
+            a.emphasis {
+                font-size: 1.9rem;
+                vertical-align: baseline;
+            }
+        }
+    }
+}
