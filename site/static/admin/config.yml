@@ -19,4 +19,5 @@ collections:
               - {label: Article Title, name: news, widget: string}
               - {label: Link, name: link, widget: string}
               - {label: Comment, name: comment, widget: string}
+              - {label: Date, name: date, widget: datetime}
      
