@@ -20,4 +20,17 @@ collections:
               - {label: Link, name: link, widget: string}
               - {label: Comment, name: comment, widget: string}
               - {label: Date, name: date, widget: datetime}
+      - label: "Affinities Items"
+        name: "affinitiesItems"
+        file: "site/data/affinities/items.yml"
+        fields:
+          - {label: Title, name: title, widget: hidden}
+          - label: Current Reading 
+            name: reading 
+            widget: list
+            fields:
+              - {label: Book Title, name: bookTitle, widget: string}
+              - {label: Book Link, name: bookLink, widget: string}
+              - {label: Author Name, name: authorName, widget: string}
+                
      

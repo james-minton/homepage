@@ -42,6 +42,9 @@ html {
     &.winter-city {
         background-image: url("images/overlay.png"), url("../images/nyc-night.jpg");
     }
+    &.summer-evening {
+        background-image: url("images/overlay.png"), url("../images/maui_evening_lr.jpg");
+    }
     /* background-image: url("../images/cyan-fog2.jpg"); */
     @include for-980-up {
         background-color: #1f1815;
@@ -493,7 +496,7 @@ section.updates.updates-page:last-child {
   } */
 
 /* ------- News & Weater + Recent Tracks ------------- */
-#main section.current {
+#main section.current, #main section.affinity-lead {
    @include for-768-up {
         display: flex;
    }

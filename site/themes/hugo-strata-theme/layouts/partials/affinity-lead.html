@@ -1,0 +1,34 @@
+<section class="affinity-lead">
+    <div class="picWell">
+            {{ with .Site.Params.affinityThumb.thumb }}<img src="../images/{{ . }}">{{ end }}
+        </div>
+        <div class="copyWell">
+          
+                {{ with .Site.Params.affinityLead.title }}<h2>{{ . | markdownify }}</h2>{{ end }}
+         
+
+    {{ range .Site.Pages }}
+    {{ if eq .Params.listType "affinities" }}
+       
+            <p class="noMarg">
+                <span class="emphasis"> Current reading: &nbsp;</span>{{ .Params.reading | safeHTML }}<br />
+                <span class="emphasis"> Last good movie: &nbsp;</span>{{ .Params.movie | safeHTML }}<br />
+                <span class="emphasis"> Heavy rotation: &nbsp;</span>{{ .Params.rotation | safeHTML }}<br />
+            </p>
+        {{ end}}
+        {{ end }}
+   
+
+<ul class="recent-posts section-head pgButton">
+     
+        <li>
+                <div class="picWell"></div>
+                <div class="post-list section-more">
+                    <a class="icon fa-carat" href="/affinities">More affinities </a>
+                    
+                </div>
+            </li>
+ 
+    </ul>  
+ </div>
+</section>  

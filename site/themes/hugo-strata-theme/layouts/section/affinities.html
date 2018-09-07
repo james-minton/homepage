@@ -1,6 +1,5 @@
 {{ define "main" }}
 
-    {{ .Content }}
     
     <header class="major">
        
@@ -30,6 +29,15 @@
                                     <ul class="minusOne"><span class="listening-to2"></span></ul>
                                 </div>
                             </div>	
+                        </div>
+                        <div class="attribute-value">
+                            <span class="emphasis"> Recently played: &nbsp;</span><span class="listening-to"></span> &nbsp;|&nbsp;
+                            <a class="collapsed emphasis" data-toggle="collapse" href="#showSongs2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    More &nbsp;<i class="icon fa-carat-down"></i> 
+                            </a>
+                            <div class="collapse grey" id="showSongs2">
+                                <ul class="minusOne"><span class="listening-to2"></span></ul>
+                            </div>
                         </div>
                     </p>
                    

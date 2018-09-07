@@ -1,12 +1,12 @@
 ---
 type: index
-headerBg: winter-city
+headerBg: summer-evening
 pageTitle: 'Affinities'
 metaContent: 'Affinities'
 listType: affinities   
-reading: 'The Reactionary Mind by Corey Robin'
-rotation: '"Law of Life" / Farah '
-movie: '"Sorry to Bother You"'
+reading: '<a href="https://www.amazon.com/Reactionary-Mind-Conservatism-Edmund-Burke/dp/0199959110" target="_blank">The Reactionary Mind</a> by Corey Robin'
+rotation: '<a href="https://www.youtube.com/watch?v=ALUBjofCkLU" target="_blank">Law of Life</a> / Farah '
+movie: '<a href="https://www.rottentomatoes.com/m/sorry_to_bother_you_2018/" target="_blank">Sorry to Bother You</a>'
 friends:
   - friend: <a href="https://noele-lusano.com/" target="blank">Noele Lusano</a> is a visual designer, image maker, and frequent collaborator
 artInfluences: 

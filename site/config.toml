@@ -114,8 +114,11 @@ paginate = 10
 		content = ""	
 
 	[params.weatherThumb]
-		thumb = "nyc-weather.jpg" 	
-
+		thumb = "nyc-weather.jpg" 
+	[params.affinityLead]
+	    title = "Affinities"		
+    [params.affinityThumb]
+	    thumb = "maui_circle.jpg"
 
 		# This can be exact coordinates or a searchable address in google maps
 		# gmaps_address = "39.7889055,-120.5443524"
@@ -165,7 +168,12 @@ paginate = 10
  [[menu.main]]
  name = "News & Weather"
  url  = "/news"
- weight = 20  
+ weight = 20 
+
+ [[menu.main]]
+ name = "Affinities"
+ url  = "/affinities"
+ weight = 25   
 
 [[menu.main]]
  name = "Contact"

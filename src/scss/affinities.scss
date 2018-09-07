@@ -29,6 +29,12 @@
                 left: 1rem;
         }
     }
+    #recentSongs {
+        display: none;
+        @include for-768-up {
+            display: flex;
+        }
+    }
     .value {
         @include for-768-up {
             font-size: 1.7rem;
@@ -37,6 +43,11 @@
                 font-size: 1.9rem;
                 vertical-align: baseline;
             }
+        }
+    }
+    .attribute-value {
+        @include for-768-up {
+            display: none;
         }
     }
 }
