@@ -9,13 +9,18 @@
                    
         <section class="current affinities-page">
                     <p id="facts">
-                       
-                        
                         <p class="noMarg">
-                            <span class="emphasis"> Current reading: &nbsp;</span>{{ .Params.reading | safeHTML }}<br />
-                            <span class="emphasis"> Last good movie: &nbsp;</span>{{ .Params.movie | safeHTML }}<br />
-                            <span class="emphasis"> Heavy rotation: &nbsp;</span>{{ .Params.rotation | safeHTML }}<br />
+                            {{ range .Site.Data.affinities.items.reading }}  
+                            <span class="emphasis"> Current reading: &nbsp;</span><a href="{{ .bookLink }}" target="_blank">{{ .bookTitle }}</a> - {{ .authorName }}<br />
+                            {{ end }} 
+                            {{ range .Site.Data.affinities.items.movie }}  
+                            <span class="emphasis"> Last good movie: &nbsp;</span><a href="{{ .movieLink }}" target="_blank">{{ .movieTitle }}</a><br />
+                            {{ end }} 
+                            {{ range .Site.Data.affinities.items.rotation }}  
+                            <span class="emphasis"> Heavy rotation: &nbsp;</span><a href="{{ .songLink }}" target="_blank">{{ .songTitle }}</a> - {{ .artistName }}<br />
+                            {{ end }} 
                         </p>
+                      
                         <div id="recentSongs">
                             <div class="attribute">
                                 <span class="emphasis"> Recently played: &nbsp;</span>
