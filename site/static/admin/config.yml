@@ -28,9 +28,26 @@ collections:
           - label: Current Reading 
             name: reading 
             widget: list
+            allow_add: false
             fields:
               - {label: Book Title, name: bookTitle, widget: string}
               - {label: Book Link, name: bookLink, widget: string}
               - {label: Author Name, name: authorName, widget: string}
+          - label: Last Good Movie
+            name: movie
+            widget: list
+            allow_add: false
+            fields:
+              - {label: Movie Title, name: movieTitle, widget: string}  
+              - {label: Movie Link, name: movieLink, widget: string}
+          - label: Heavy Rotation      
+            name: rotation
+            widget: list
+            allow_add: false
+            fields:
+              - {label: Song Title, name: songTitle, widget: string}
+              - {label: Song Link, name: songLink, widget: string}
+              - {label: Artist Name, name: artistName, widget: string}
+
                 
      
