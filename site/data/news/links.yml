@@ -4,3 +4,8 @@ newsListDisplay:
       eviction isn't the result of irresponsibility—it's an inevitability.
     link: 'http://www.wnpr.org/post/americas-eviction-epidemic'
     news: America's Eviction Epidemic | WNPR
+  - comment: >-
+      Firefox will now block cross-site tracking ... by default 
+    link: 'https://blog.mozilla.org/futurereleases/2018/08/30/changing-our-approach-to-anti-tracking/'
+    news: Changing Our Approach to Anti-tracking | Mozilla
+    
