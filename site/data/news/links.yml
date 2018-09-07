@@ -1,10 +1,11 @@
 newsListDisplay:
   - comment: 'What could go wrong?  '
+    date: 2018-09-07T03:14:03.479Z
     link: >-
       https://theintercept.com/2018/09/06/nypd-surveillance-camera-skin-tone-search/
     news: >-
       IBM develops technology that lets NYPD search surveillance footage by skin
-      color
+      color  
   - comment: >-
       Radio interview with Eviction Lab PI Matthew Desmond. Often enough,
       eviction isn't the result of irresponsibility—it's an inevitability.
@@ -40,3 +41,4 @@ newsListDisplay:
     link: >-
       https://www.thenation.com/article/how-medicare-was-won/?utm_medium=socialflow&utm_source=twitter
     news: How Medicare Was Won
+

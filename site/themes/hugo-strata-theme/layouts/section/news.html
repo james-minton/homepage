@@ -26,7 +26,8 @@
     <section class="news-links">  
         <span class="emphasis">Recent headlines</span>  
         <ul class="news-link-list">
-            {{ range first 20 ( .Site.Data.news.links.newsListDisplay )  }}
+            {{ range first 20 ( sort ( .Site.Data.news.links.newsListDisplay ) "date" "desc" )  }}
+                
                 <li>
                     <a href="{{ .link }}" target="_blank">{{ .news }}</a><br />
                     <span>{{ .comment }}</span>
