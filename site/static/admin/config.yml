@@ -36,14 +36,12 @@ collections:
           - label: Last Good Movie
             name: movie
             widget: list
-            allow_add: false
             fields:
               - {label: Movie Title, name: movieTitle, widget: string}  
               - {label: Movie Link, name: movieLink, widget: string}
           - label: Heavy Rotation      
             name: rotation
             widget: list
-            allow_add: false
             fields:
               - {label: Song Title, name: songTitle, widget: string}
               - {label: Song Link, name: songLink, widget: string}
