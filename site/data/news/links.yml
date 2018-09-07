@@ -1,27 +1,35 @@
 newsListDisplay:
+  - link: >-
+      https://theintercept.com/2018/09/06/nypd-surveillance-camera-skin-tone-search/
+    news: >-
+      IBM develops technology that lets NYPD search surveillance footage by skin
+      color
   - comment: >-
       Radio interview with Eviction Lab PI Matthew Desmond. Often enough,
       eviction isn't the result of irresponsibility—it's an inevitability.
     link: 'http://www.wnpr.org/post/americas-eviction-epidemic'
     news: America's Eviction Epidemic | WNPR
-  - comment: >-
-      Firefox will now block cross-site tracking ... by default 
-    link: 'https://blog.mozilla.org/futurereleases/2018/08/30/changing-our-approach-to-anti-tracking/'
+  - comment: 'Firefox will now block cross-site tracking ... by default '
+    link: >-
+      https://blog.mozilla.org/futurereleases/2018/08/30/changing-our-approach-to-anti-tracking/
     news: Changing Our Approach to Anti-tracking | Mozilla
-  - comment: >-
-    link: 'https://www.urban.org/urban-wire/landlords-limit-voucher-holders-choice-where-they-can-live'
+  - comment: ''
+    link: >-
+      https://www.urban.org/urban-wire/landlords-limit-voucher-holders-choice-where-they-can-live
     news: Landlords limit voucher holders’ choice in where they can live
+  - comment: Yikes
+    link: >-
+      https://www.zdnet.com/article/wordpress-vulnerability-affects-a-third-of-most-popular-websites-online/
+    news: Severe vulnerability exposes WordPress websites to attack
   - comment: >-
-      Yikes
-    link: 'https://www.zdnet.com/article/wordpress-vulnerability-affects-a-third-of-most-popular-websites-online/'
-    news: Severe vulnerability exposes WordPress websites to attack 
-  - comment: >-
-      Part of a growing trend of right-to-counsel laws, also recently enacted in SF and NYC 
-    link: 'https://www.nj.com/essex/index.ssf/2018/08/newark_right_to_counsel_free_lawyers_evictions.html'
+      Part of a growing trend of right-to-counsel laws, also recently enacted in
+      SF and NYC 
+    link: >-
+      https://www.nj.com/essex/index.ssf/2018/08/newark_right_to_counsel_free_lawyers_evictions.html
     news: Renters getting evicted will soon get free lawyers in N.J. city
   - comment: >-
-      (Tl;dr: by extensive public organization in the face of entrenched interests)
-    link: 'https://www.thenation.com/article/how-medicare-was-won/?utm_medium=socialflow&utm_source=twitter'
-    news: How Medicare Was Won     
-    
-    
+      (Tl;dr: by extensive public organization in the face of entrenched
+      interests)
+    link: >-
+      https://www.thenation.com/article/how-medicare-was-won/?utm_medium=socialflow&utm_source=twitter
+    news: How Medicare Was Won
