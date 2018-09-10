@@ -169,11 +169,7 @@ paginate = 10
  name = "News & Weather"
  url  = "/news"
  weight = 20 
-
- [[menu.main]]
- name = "Affinities"
- url  = "/affinities"
- weight = 25   
+ 
 
 [[menu.main]]
  name = "Contact"
