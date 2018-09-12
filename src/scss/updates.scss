@@ -1,0 +1,36 @@
+.inline-header-wrap {
+    display: block;
+    @include for-below-767 {
+        padding-bottom: 0.8rem !important;
+    }
+    padding-bottom: 2.4rem !important;
+    @include for-768-up {
+        header.major {
+            float: left;
+        }
+    }
+}
+
+
+
+.nav-tabs {
+        margin-top: 0.8rem;
+        @include for-below-767 {
+            display: block;
+            text-align: center;
+            li.nav-item {
+                display: inline;
+            }
+        }
+        @include for-768-up {
+            float: right;
+        }
+    .nav-item a.nav-link.post-title-link {
+        font-size: 2rem;
+        font-variant: all-petite-caps;
+        display: inline-block;
+        @include for-768-up {
+            font-size: 2.1rem;
+        }
+    }
+}

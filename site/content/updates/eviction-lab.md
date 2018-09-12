@@ -5,6 +5,7 @@ draft = false
 title = "The Eviction Lab"
 thumb = "eviction-lab-circle.jpg"
 postImg = "EL-Twitter-Image.jpg"
+contentType = "work"
 listSummary = "It's my honor to serve with Princeton University's Eviction Lab (led by sociologist and author of Evicted, Matthew Desmond) as Creative Director for the recently-launched evictionlab.org. A year ago ..."
 
 +++

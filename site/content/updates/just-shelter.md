@@ -5,6 +5,7 @@ draft: false
 title: "New Work: Just Shelter"
 thumb: "evicted_book.jpg"
 postImg: "thumb_justshelter2.png"
+contentType: work
 listSummary: >
             I'm very excited to announce the launch of <a title="Just Shelter website" href="http://justshelter.org" target="_blank">justshelter.org</a>, which serves as a portal for raising awareness of eviction's role in perpetuating poverty, for sharing eviction stories, and for locating housing resources.
 

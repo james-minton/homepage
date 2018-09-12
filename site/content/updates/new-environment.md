@@ -6,6 +6,7 @@ title: "New Environment"
 thumb: "new-environment.jpg"
 postImg: "adirondack-trail.jpg"
 headerBg: fall
+contentType: personal
 listSummary: >
              Welcome to the long-overdue revamp of my website. For this latest iteration, I'm going with a lighter-weight, database-free framework.
 ---             

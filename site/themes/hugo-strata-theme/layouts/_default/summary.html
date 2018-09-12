@@ -8,22 +8,63 @@
 
 <p>{{ .Summary }}</p>
 <hr> -->
-<section class="updates updates-page">
 
-	<div class="row">
-         
-        <ul class="recent-posts">
-        
-            <li>
-                <div class="picWell {{ .Params.specialClass }}"><img src="../images/{{ .Params.thumb }}" /></div>
-                <div class="post-list">
-                    <a class="post-title-link" href="{{ .Permalink }}">{{ .Title }}</a>
-                    <p class="post-summary">{{ .Params.listSummary | markdownify }}
-                    <a class="post-list-readmore icon fa-carat" href="{{ .Permalink }}">&nbsp;read more </a></p>
-                </div>
-            </li>
-    
-        </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="work" role="tabpanel" aria-labelledby="work-tab">
    
-    </div>
-    </section>
+       
+        <section class="updates updates-page"><!-- Work section -->
+
+            <div class="row">
+                
+                <ul class="recent-posts">
+                        {{ range .Data.Pages }}    
+                        {{ if eq .Params.contentType "work" }}
+                
+                    <li>
+                        <div class="picWell {{ .Params.specialClass }}"><img src="../images/{{ .Params.thumb }}" /></div>
+                        <div class="post-list">
+                            <a class="post-title-link" href="{{ .Permalink }}">{{ .Title }}</a>
+                            <p class="post-summary">{{ .Params.listSummary | markdownify }}
+                            <a class="post-list-readmore icon fa-carat" href="{{ .Permalink }}">&nbsp;read more </a></p>
+                        </div>
+                    </li>
+                    {{ end }}    
+                    {{ end }}
+                </ul>
+        
+            </div>
+        </section>
+        
+    </div>        
+
+    <div class="tab-pane fade" id="personal" role="tabpanel" aria-labelledby="personal-tab">
+        <section class="updates updates-page"><!-- Work section -->
+
+            <div class="row">
+                
+                <ul class="recent-posts">
+                    {{ range .Data.Pages }}   
+                    {{ if eq .Params.contentType "personal" }}
+                    <li>
+                        <div class="picWell {{ .Params.specialClass }}"><img src="../images/{{ .Params.thumb }}" /></div>
+                        <div class="post-list">
+                            <a class="post-title-link" href="{{ .Permalink }}">{{ .Title }}</a>
+                            <p class="post-summary">{{ .Params.listSummary | markdownify }}
+                            <a class="post-list-readmore icon fa-carat" href="{{ .Permalink }}">&nbsp;read more </a></p>
+                        </div>
+                    </li>
+                    {{ end }}
+                    {{ end }}
+                </ul>
+        
+            </div>
+        </section>
+        
+        
+        
+        </div>
+           
+
+
+</div><!-- all tab content -->

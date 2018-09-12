@@ -6,6 +6,7 @@ title: "Partnering with Mapbox to Visualize Evictions Nationwide"
 thumb: "mapbox-icon.jpeg"
 postImg: "eviction-lab-southeast-map5.jpg"
 specialClass: "brightness"
+contentType: work
 listSummary: >
             In the daunting task of building a nationwide eviction mapping tool, the <a href="https://www.evictionlab.org/" target="_blank">evictionlab.org</a> web team and I were greatly aided by our partnership with <a href="https://www.mapbox.com/" target="_blank">Mapbox</a> (the company and the platform). 
 

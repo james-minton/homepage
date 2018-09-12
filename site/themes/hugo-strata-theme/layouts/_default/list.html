@@ -1,23 +1,28 @@
 {{ define "main" }}
 
     {{ .Content }}
-    
-    <header class="major">
-       
-            {{ with .Site.Params.recentposts.title }}
-               
-                    <h2 class="dark-blk page-head">{{ . }}</h2>
-                
-        {{ end }}
-    </header>
-  
-        {{ $paginator := .Paginate .Data.Pages }}
+    <div class="inline-header-wrap">  
+        <header class="major updates-header">
         
-        {{ range $paginator.Pages }}
+                {{ with .Site.Params.recentposts.title }}
+                
+                        <h2 class="dark-blk page-head">{{ . }}</h2>
+                    
+            {{ end }}
+        </header>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active post-title-link" id="work-tab" data-toggle="tab" href="#work" role="tab" aria-controls="home" aria-selected="true">Work</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link post-title-link" id="profile-tab" data-toggle="tab" href="#personal" role="tab" aria-controls="profile" aria-selected="false">Personal</a>
+            </li>
+        </ul>
+    </div>  
+        
+        
             {{ .Render "summary" }}
-        {{ end }}
-    
-        {{ partial "pagination" . }}
+        
    
 {{ end }}
  

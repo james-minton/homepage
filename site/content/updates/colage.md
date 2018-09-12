@@ -5,6 +5,7 @@ draft: false
 title: "New Work: COLAGE"
 thumb: "colage-circle.jpg"
 postImg: "COLAGE_screen.jpg"
+contentType: work
 listSummary: >
             <a href="https://www.colage.org/" target="_blank" rel="noopener noreferrer">COLAGE</a> is an organization that supports children of LGBTQ parents via nationwide chapters and meetups, along with self-produced guides, videos, and other resources. Working with designer <a href="http://www.rafaelsoldi.com/" target="_blank" rel="noopener noreferrer">Rafael Soldi</a>, I developed a site ...
 

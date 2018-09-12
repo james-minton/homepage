@@ -10,7 +10,7 @@
 <hr> -->
 
 
-    {{ range first 1 ( .Params.newsDisplay ) }}
+    {{ range first 1 ( sort ( .Site.Data.news.links.newsListDisplay ) "date" "desc" )  }}
         <span class="news"><span class="emphasis">Latest News: </span><a href="{{ .link }}" target="_blank">{{ .news }}</a></span><br />
     {{ end }}
 

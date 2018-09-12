@@ -33,6 +33,11 @@ $gtLaptop: 1439px; // greater than laptop device breakpoint
 @mixin for-tablet-portrait-only {
   @media (min-width: 768px) and (max-width: 1023px) { @content; }
 }
+
+@mixin for-below-767 {
+  @media (max-width: 767px) { @content; }
+}
+
 @mixin for-768-up {
   @media (min-width: $gt768) { @content; }
 }
@@ -147,8 +152,51 @@ a.collapsed i.icon.fa-carat-down {
   text-transform: none !important;
 }
 
+.nav-tabs {
+  border: none;
+  li.nav-item {
+    margin-bottom: 0;
+    &:first-child:after {
+      content: " |";
+      padding-left: 4px;
+    }
+  }
+  li.nav-item:first-child {
+    padding-left: 0px;
+  }
+ 
+  .nav-link {
+   /*  border: 2px dotted #d8d8d8; */
+    border-radius: 4px;
+    border: none;
+  }
+  .nav-link {
+    padding: 9px 19px 12px;
+    @include for-below-767 {
+      padding: 0 19px;
+    }
+  }
+  .nav-link.active {
+    padding: 9px 17px 12px;
+    @include for-below-767 {
+      padding: 0 17px;
+    }
+  }
+  a.nav-link.active {
+    font-weight: 900;
+    color: #49be9d;
+}
+  /* .nav-link:hover {
+    border: 2px dotted #49bf9d;
+    padding: 7px 15px 10px;
+    border-radius: 4px;
+    color: #49bf9d;
+  } */
+   
+}
 
 @import 'homepage';
+@import 'updates';
 @import 'single';
 @import 'news-weather'; 
 @import 'affinities'

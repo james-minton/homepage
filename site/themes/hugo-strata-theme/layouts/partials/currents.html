@@ -7,9 +7,9 @@
                     {{ with .Site.Params.current.title }}<h2>{{ . | markdownify }}</h2>{{ end }}
              
     <p id="facts">
-            {{ range first 1 ( .Site.Data.news.links.newsListDisplay ) }}
-                    <span class="news"><span class="emphasis">Latest News: </span><a href="{{ .link }}" target="_blank">{{ .news }}</a></span><br />
-                {{ end}}
+        {{ range first 1 ( sort ( .Site.Data.news.links.newsListDisplay ) "date" "desc" )  }}
+            <span class="news"><span class="emphasis">Latest News: </span><a href="{{ .link }}" target="_blank">{{ .news }}</a></span><br />
+        {{ end}}
         <span id="weather"></span><br />
         <!--<p class="noMarg grey"><span class="emphasis"> Current reading: &nbsp;</span>{{ .Params.reading | safeHTML }}<br />
             <span class="emphasis"> Heavy rotation: &nbsp;</span>{{ .Params.rotation | safeHTML }}<br />
