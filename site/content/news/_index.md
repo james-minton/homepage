@@ -1,6 +1,6 @@
 ---
 type: index
-headerBg: winter-city
+headerBg: fall
 pageTitle: 'News & Weather'
 metaContent: 'News & Weather'
 testVariable:

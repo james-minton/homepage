@@ -7,7 +7,7 @@ reading: 'The Reactionary Mind by Corey Robin'
 rotation: '"Her" / Zomby '   
 contactThumb: 'rotary-blk.jpg'  
 weatherThumb: 'ca-weather.jpg' 
-headerBg: fall  
+headerBg: winter-city  
 newsDisplay: 
   - news: 'Landlords limit voucher holders’ choice in where they can live'
     link: 'https://www.urban.org/urban-wire/landlords-limit-voucher-holders-choice-where-they-can-live'
