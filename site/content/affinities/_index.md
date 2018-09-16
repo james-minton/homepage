@@ -28,7 +28,7 @@ artInfluences:
     comment: ""
 artInfluenceMultiple:
   - influence: "William Eggleston: <a href='https://yalebooks.yale.edu/book/9780300222524/william-eggleston-portraits' target='blank'>Portraits</a> | <a href='https://davidzwirnerbooks.com/product/william-eggleston-from-black-and-white-to-color' target='_blank'>From Black & White to Color</a> | <a href='https://davidzwirnerbooks.com/product/william-egglestons-guide' target='_blank'>Eggleston's Guide</a>"  
-    comment: "In addition to everything else he's known for, what hooks me most about Eggleston's work is his seeming ability to capture the entire spirit & ambience of the South (and sometimes, the heavy weight of its history) within a single image"
+    comment2: "In addition to everything else he's known for, what hooks me most about Eggleston's work is his seeming ability to capture the entire spirit & ambience of the South (and sometimes, the heavy weight of its history) within a single image"
   - influence: 'Photo theory: Roland Barthes, <a href="https://www.amazon.com/Camera-Lucida-Reflections-Roland-Barthes/dp/0374532338" target="_blank">Camera Lucida</a> | Susan Sontag, <a href="http://www.susansontag.com/SusanSontag/books/onPhotographyExerpt.shtml" target="_blank">On Photography</a>'
     comment: ""  
 ---

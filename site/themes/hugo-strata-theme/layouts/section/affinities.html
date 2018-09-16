@@ -9,21 +9,32 @@
                    
         <section class="current affinities-page">
                     <p id="facts">
-                        <p class="noMarg">
-                            {{ range .Site.Data.affinities.items.reading }}  
-                            <span class="emphasis"> Current reading: &nbsp;</span><a href="{{ .bookLink }}" target="_blank">{{ .bookTitle }}</a> - {{ .authorName }}<br />
+                        
+                            <ul class="hollowCircle noMarg">
+                            {{ range .Site.Data.affinities.items.reading }}
+                                <li>
+                                    Current reading: &nbsp;<a href="{{ .bookLink }}" target="_blank">{{ .bookTitle }}</a> - {{ .authorName }}<br />
+                                </li>  
+                            {{ end }}
+                            {{ range .Site.Data.affinities.items.movie }} 
+                                <li> 
+                                    Last good movie: &nbsp;<a href="{{ .movieLink }}" target="_blank">{{ .movieTitle }}</a><br />
+                                </li> 
                             {{ end }} 
-                            {{ range .Site.Data.affinities.items.movie }}  
-                            <span class="emphasis"> Last good movie: &nbsp;</span><a href="{{ .movieLink }}" target="_blank">{{ .movieTitle }}</a><br />
+                                
+                            {{ range .Site.Data.affinities.items.rotation }} 
+                                <li>
+                                    Heavy rotation: &nbsp;<a href="{{ .songLink }}" target="_blank">{{ .songTitle }}</a> - {{ .artistName }}<br />
+                                </li>
                             {{ end }} 
-                            {{ range .Site.Data.affinities.items.rotation }}  
-                            <span class="emphasis"> Heavy rotation: &nbsp;</span><a href="{{ .songLink }}" target="_blank">{{ .songTitle }}</a> - {{ .artistName }}<br />
-                            {{ end }} 
-                        </p>
-                      
-                        <div id="recentSongs">
+                          
+                       
+                            <li id="recentSongs">  
+                        <div >
+                           
+                             
                             <div class="attribute">
-                                <span class="emphasis"> Recently played: &nbsp;</span>
+                                <span class=""> Recently played: &nbsp;</span>
                             </div>	
                             <div class="value">	
                                 <span class="listening-to"></span> &nbsp;|&nbsp;
@@ -33,9 +44,15 @@
                                 <div class="collapse grey" id="showSongs">
                                     <ul class="minusOne"><span class="listening-to2"></span></ul>
                                 </div>
-                            </div>	
+                            </div>
+                            
+                          	
                         </div>
-                        <div class="attribute-value">
+                    </li> 
+                    <li class="attribute-value">  
+                        <div >
+                            
+                             
                             <span class="emphasis"> Recently played: &nbsp;</span><span class="listening-to"></span> &nbsp;|&nbsp;
                             <a class="collapsed emphasis" data-toggle="collapse" href="#showSongs2" role="button" aria-expanded="false" aria-controls="collapseExample">
                                     More &nbsp;<i class="icon fa-carat-down"></i> 
@@ -44,11 +61,15 @@
                                 <ul class="minusOne"><span class="listening-to2"></span></ul>
                             </div>
                         </div>
+                            </li>
+                            </ul>
+                        
+                   
                     </p>
                    
       </section>
       <section class="influences affinities-page">
-            <span class="emphasis">Art & Design Influences</span>  
+            <span class="emphasis">Art & Design Books I Like</span>  
             <ul class="news-link-list">
                     {{ range ( .Params.artInfluenceMultiple ) }}
                     <li>
