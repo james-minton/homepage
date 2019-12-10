@@ -54,7 +54,7 @@ paginate = 10
 		hide  = false
 		title = ""
 		content = "Hello world!"
-        thumb = "jm-self-sepia.jpg"
+        thumb = "self-12-2019-235px.jpg"
 
 	[params.portfolio]
 		hide  = true
