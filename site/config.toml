@@ -31,7 +31,7 @@ paginate = 10
 	[params.sidebar]
 		# Replace the avatar with a picture of your own under static/images
 		avatar = "jm-logo-white-4.svg"
-        avatar2 = "jm-self-sepia.jpg"
+        avatar2 = "self-12-2019-235px.jpg"
 		# Use Markdown to format the string. This works nearly all over the theme
 		bio = ""
 		twitter = "vastexpanse"
