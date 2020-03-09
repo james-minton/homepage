@@ -65,8 +65,18 @@
               var mySunrise = new Date( sunriseConvert *1000);
               var sunsetConvert = jsonObj['sys']['sunset'];
               var mySunset = new Date( sunsetConvert *1000);
-              myPara.innerHTML = '<span class="emphasis">Current NYC weather </span><br /> ' + '<span class="capitalize">' + jsonObj['weather'][0]['description'] + '</span>' + ', ' + jsonObj['main']['temp'] + '˚ F '
-              + '<br />Humidity: ' +jsonObj['main']['humidity'] + '%' ;
+              var temp = "";
+              var temp = [jsonObj['main']['temp']][0];
+              function tempTruncate() {
+                  return temp;
+              }
+            
+              
+              
+              //var temp = "646";
+        
+              myPara.innerHTML = '<span class="emphasis">Current NYC weather </span><br /> ' + '<span class="capitalize">' + jsonObj['weather'][0]['description'] + '</span>' + ', ' + tempTruncate() + '˚ F '
+              + '<br />Humidity: ' +jsonObj['main']['humidity'] + '%';
               document.getElementById("weather").appendChild(myPara);
               document.getElementById("forecast").innerHTML = 'Sunrise: ' + [mySunrise.getHours()] + ':' + [mySunrise.getMinutes()] + ' am &nbsp;|&nbsp; ' + 'Sunset: ' + [mySunset.getHours() -12] + ':' + [mySunset.getMinutes()] + ' pm' ;
             }
