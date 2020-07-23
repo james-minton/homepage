@@ -6,8 +6,9 @@ public_folder: "/images/uploads" # The src attribute for uploaded media will beg
 collections:
   - label: "Updates"
     name: updates
-    folder: content/updates
+    folder: site/content/updates
     create: true
+    extension: "md"
     fields:
       - {label: Date, name: date, widget: datetime}
       - {label: Draft, name: draft, widget: boolean}
